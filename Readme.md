@@ -1,5 +1,6 @@
-# Read Me
+# Courses List
 
-## Courses List
+## 2025 Spring
 
-- Computational Biology (2025 Spring)
+- Computational Biology
+- Introduction to Logic
