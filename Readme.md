@@ -2,4 +2,4 @@
 
 ## Courses List
 
-- Computational Biology
+- Computational Biology (2025 Spring)
