@@ -6,7 +6,7 @@ Please use PDB website to genreate a ligand report for human tyrosine-protein ki
 
 Please (use RDKit or other tools to) generate 2 different binary fingerprints (e.g., MACSS, ECFP4) for the ligands of human tyrosine-protein kinase ABL1 in your report. Please submit an excel file which should have 5 columns (PDB-ID, 3-digit alphanumerial ID of ligand, smiles of ligand, fp1 of ligand, fp2 of ligand).
 
-[Hint: You may start from the 3-digit alphanumerial ID of each ligand (e.g. STI is a ligand of human tyrosine-protein kinase ABL1 from PDB 2HYY, the PDB page for the ligand is https://www.rcsb.org/ligand/STI, you can find the smiles representation/format of STI in this page. Once you have its smiles, you can readily convert it to binary fingerprints.]
+[Hint: You may start from the 3-digit alphanumerial ID of each ligand (e.g. STI is a ligand of human tyrosine-protein kinase ABL1 from PDB 2HYY), the PDB page for the ligand is https://www.rcsb.org/ligand/STI, you can find the smiles representation/format of STI in this page. Once you have its smiles, you can readily convert it to binary fingerprints.]
 
 ## Q3
 
