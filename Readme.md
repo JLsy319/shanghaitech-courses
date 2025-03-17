@@ -2,9 +2,9 @@
 
 ## 2024 Spring
 
-- General Physics II Lab
+- General Physics II Lab: PhyLab
 
 ## 2025 Spring
 
-- Computational Biology
-- Introduction to Logic
+- Computational Biology: CompBio
+- Introduction to Logic: IntroLogic
