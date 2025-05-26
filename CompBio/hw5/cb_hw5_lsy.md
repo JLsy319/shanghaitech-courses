@@ -30,3 +30,5 @@ The space complexity is **O(mn)** in the standard implementation. While optimiza
 1. NW (global) vs. SW (local): Scope, scoring rules, and traceback differ.  
 2. Time: *O(mn)*.  
 3. Space: *O(mn)* (full matrix retained for traceback).
+
+// TODO: Hw5
