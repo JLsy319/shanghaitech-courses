@@ -6,9 +6,7 @@
 
 在计算机辅助药物设计中，QSAR 是一种非常实用的方法。谁最初提出了 QSAR 这种方法？请简述他的主要贡献？
 
-可参考 [Link](https://onlinelibrary.wiley.com/doi/epdf/10.1002/qsar.19880070302
-https://pubs.acs.org/doi/abs/10.1021/ar00028a003
-https://link.springer.com/article/10.1007/s10822-011-9449-6)
+可参考 [Link1](https://onlinelibrary.wiley.com/doi/epdf/10.1002/qsar.19880070302), [Link2](https://pubs.acs.org/doi/abs/10.1021/ar00028a003), [Link3](https://link.springer.com/article/10.1007/s10822-011-9449-6)
 
 ## Q3
 
