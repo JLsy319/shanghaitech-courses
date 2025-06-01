@@ -1,0 +1,20 @@
+{
+    "name": "Or22c_Methyl-salicylate_complex",
+    "modelSeeds": [1],
+    "sequences": [
+      {
+        "protein": {
+          "id": "A",
+          "sequence": "precomputed MSA"
+        }
+      },
+      {
+        "ligand": {
+          "id": "L",
+          "smiles": "COC(=O)C1=CC=CC=C1O"
+        }
+      }
+    ],
+    "dialect": "alphafold3",
+    "version": 1
+  }
