@@ -1,0 +1,515 @@
+>Cluster 0
+0	7172aa, >AHA83606.1... *
+1	303aa, >YP_009924372.1... at 98.02%
+2	303aa, >YP_009944258.1... at 86.80%
+>Cluster 1
+0	306aa, >Infectious... at 96.08%
+1	306aa, >Bovine... at 96.08%
+2	306aa, >Feline... at 96.08%
+3	306aa, >Human... at 96.08%
+4	306aa, >Murine... at 96.08%
+5	306aa, >Murine... at 96.08%
+6	306aa, >Porcine... at 96.08%
+7	306aa, >Transmissible... at 96.08%
+8	306aa, >Turkey... at 96.08%
+9	306aa, >Canine... at 96.08%
+10	306aa, >Feline... at 96.08%
+11	306aa, >Porcine... at 96.08%
+12	306aa, >Human... at 96.08%
+13	306aa, >Porcine... at 96.08%
+14	306aa, >Murine... at 96.08%
+15	306aa, >Equine... at 96.08%
+16	306aa, >Human... at 96.08%
+17	306aa, >Canine... at 96.08%
+18	306aa, >SARS... at 96.08%
+19	306aa, >SARS... at 96.08%
+20	306aa, >SARS... at 96.08%
+21	306aa, >SARS... at 96.08%
+22	306aa, >SARS... at 96.08%
+23	306aa, >SARS... at 96.08%
+24	306aa, >SARS... at 96.08%
+25	306aa, >SARS... at 96.08%
+26	306aa, >SARS... at 96.08%
+27	306aa, >SARS... at 96.08%
+28	7073aa, >AAP37015.1... *
+29	306aa, >SARS... at 96.08%
+30	306aa, >Civet... at 96.08%
+31	306aa, >Civet... at 96.08%
+32	306aa, >SARS... at 96.08%
+33	306aa, >SARS... at 96.08%
+34	306aa, >SARS... at 96.08%
+35	306aa, >SARS... at 96.08%
+36	306aa, >SARS... at 96.08%
+37	306aa, >SARS... at 96.08%
+38	306aa, >SARS... at 96.08%
+39	306aa, >SARS... at 96.08%
+40	306aa, >SARS... at 96.08%
+41	306aa, >SARS... at 96.08%
+42	306aa, >SARS... at 96.08%
+43	7073aa, >AAP94735.1... at 100.00%
+44	306aa, >SARS... at 96.08%
+45	306aa, >SARS... at 96.08%
+46	306aa, >SARS... at 96.08%
+47	306aa, >SARS... at 96.08%
+48	306aa, >SARS... at 96.08%
+49	306aa, >SARS... at 96.08%
+50	306aa, >SARS... at 96.08%
+51	306aa, >SARS... at 96.08%
+52	306aa, >SARS... at 96.08%
+53	306aa, >SARS... at 96.08%
+54	306aa, >SARS... at 96.08%
+55	306aa, >SARS... at 96.08%
+56	306aa, >SARS... at 96.08%
+57	306aa, >SARS... at 96.08%
+58	306aa, >SARS... at 96.08%
+59	306aa, >SARS... at 96.08%
+60	306aa, >SARS... at 96.08%
+61	306aa, >SARS... at 96.08%
+62	306aa, >SARS... at 96.08%
+63	306aa, >SARS... at 96.08%
+64	306aa, >SARS... at 96.08%
+65	306aa, >SARS... at 96.08%
+66	306aa, >SARS... at 96.08%
+67	306aa, >SARS... at 96.08%
+68	306aa, >SARS... at 96.08%
+69	306aa, >SARS... at 96.08%
+70	306aa, >SARS... at 96.08%
+71	306aa, >SARS... at 96.08%
+72	306aa, >SARS... at 96.08%
+73	306aa, >SARS... at 96.08%
+74	306aa, >SARS... at 96.08%
+75	306aa, >SARS... at 96.08%
+76	306aa, >SARS... at 96.08%
+77	306aa, >SARS... at 96.08%
+78	306aa, >SARS... at 96.08%
+79	306aa, >SARS... at 96.08%
+80	306aa, >SARS... at 96.08%
+81	306aa, >SARS... at 96.08%
+82	306aa, >SARS... at 96.08%
+83	306aa, >SARS... at 96.08%
+84	120aa, >pdb|2K7X|A... at 100.00%
+85	306aa, >SARS... at 96.08%
+86	306aa, >SARS... at 96.08%
+87	306aa, >SARS... at 96.08%
+88	306aa, >SARS... at 96.08%
+89	306aa, >Pheasant... at 96.08%
+90	7073aa, >AAR87499.1... at 100.00%
+91	7073aa, >AAR87510.1... at 99.94%
+92	7073aa, >AAR87521.1... at 100.00%
+93	7073aa, >AAR87532.1... at 99.99%
+94	7073aa, >AAR87543.1... at 99.99%
+95	7073aa, >AAR87554.1... at 100.00%
+96	7073aa, >AAR87565.1... at 100.00%
+97	7073aa, >AAR87576.1... at 100.00%
+98	7073aa, >AAR87587.1... at 99.99%
+99	7073aa, >AAR87598.1... at 99.99%
+100	306aa, >SARS... at 96.08%
+101	306aa, >SARS... at 96.08%
+102	306aa, >SARS... at 96.08%
+103	306aa, >SARS... at 96.08%
+104	306aa, >SARS... at 96.08%
+105	306aa, >SARS... at 96.08%
+106	306aa, >SARS... at 96.08%
+107	306aa, >SARS... at 96.08%
+108	306aa, >SARS... at 96.08%
+109	306aa, >SARS... at 96.08%
+110	306aa, >SARS... at 96.08%
+111	306aa, >SARS... at 96.08%
+112	306aa, >SARS... at 96.08%
+113	306aa, >SARS... at 96.08%
+114	306aa, >SARS... at 96.08%
+115	306aa, >SARS... at 96.08%
+116	306aa, >SARS... at 96.08%
+117	306aa, >SARS... at 96.08%
+118	306aa, >SARS... at 96.08%
+119	306aa, >Human... at 96.08%
+120	306aa, >SARS... at 96.08%
+121	306aa, >SARS... at 96.08%
+122	306aa, >Avian... at 96.08%
+123	306aa, >SARS... at 96.08%
+124	306aa, >Civet... at 96.08%
+125	306aa, >SARS... at 96.08%
+126	306aa, >SARS... at 96.08%
+127	4382aa, >AAU81607.1... at 99.93%
+128	306aa, >SARS... at 96.08%
+129	306aa, >SARS... at 96.08%
+130	306aa, >SARS... at 96.08%
+131	306aa, >SARS... at 96.08%
+132	306aa, >SARS... at 96.08%
+133	306aa, >SARS... at 96.08%
+134	306aa, >SARS... at 96.08%
+135	306aa, >SARS... at 96.08%
+136	306aa, >SARS... at 96.08%
+137	306aa, >Bat... at 96.08%
+138	306aa, >Bat... at 96.08%
+139	306aa, >Bat... at 96.08%
+140	306aa, >SARS... at 96.08%
+141	4388aa, >sp|P0C6F5.1|R1A_BC279... at 93.53%
+142	319aa, >pdb|7SKR|A... at 96.55%
+143	4380aa, >sp|P0C6T7.1|R1A_BCRP3... at 96.55%
+144	306aa, >SARS... at 96.08%
+145	306aa, >SARS... at 96.08%
+146	306aa, >Bat... at 96.08%
+147	4388aa, >sp|P0C6F5.1|R1A_BC279... at 93.53%
+148	306aa, >Bat... at 96.08%
+149	306aa, >Bat... at 96.08%
+150	306aa, >Bovine... at 96.08%
+151	306aa, >TGEV... at 96.08%
+152	306aa, >TGEV... at 96.08%
+153	306aa, >TGEV... at 96.08%
+154	306aa, >TGEV... at 96.08%
+155	306aa, >Porcine... at 96.08%
+156	306aa, >Bovine... at 96.08%
+157	306aa, >Sambar... at 96.08%
+158	306aa, >Sambar... at 96.08%
+159	306aa, >White-tailed... at 96.08%
+160	306aa, >Waterbuck... at 96.08%
+161	306aa, >Waterbuck... at 96.08%
+162	306aa, >Sable... at 96.08%
+163	306aa, >Giraffe... at 96.08%
+164	306aa, >Calf-giraffe... at 96.08%
+165	306aa, >Giraffe... at 96.08%
+166	306aa, >Bovine... at 96.08%
+167	306aa, >Bovine... at 96.08%
+168	306aa, >Bovine... at 96.08%
+169	306aa, >Bovine... at 96.08%
+170	306aa, >Bovine... at 96.08%
+171	306aa, >Bovine... at 96.08%
+172	306aa, >Bovine... at 96.08%
+173	306aa, >Bat... at 96.08%
+174	306aa, >Bat... at 96.08%
+175	306aa, >Bat... at 96.08%
+176	306aa, >Bat... at 96.08%
+177	306aa, >Bat... at 96.08%
+178	306aa, >Bat... at 96.08%
+179	306aa, >Bat... at 96.08%
+180	306aa, >Bat... at 96.08%
+181	306aa, >Bat... at 96.08%
+182	306aa, >Murine... at 96.08%
+183	306aa, >Murine... at 96.08%
+184	306aa, >Murine... at 96.08%
+185	4376aa, >sp|P0C6F8.1|R1A_BCHK3... at 94.31%
+186	306aa, >Feline... at 96.08%
+187	306aa, >Feline... at 96.08%
+188	306aa, >Feline... at 96.08%
+189	306aa, >Feline... at 96.08%
+190	306aa, >Bovine... at 96.08%
+191	306aa, >Waterbuck... at 96.08%
+192	306aa, >Feline... at 96.08%
+193	306aa, >Feline... at 96.08%
+194	306aa, >Murine... at 96.08%
+195	306aa, >Bovine... at 96.08%
+196	306aa, >Murine... at 96.08%
+197	306aa, >Murine... at 96.08%
+198	306aa, >Bovine... at 96.08%
+199	306aa, >SARS... at 96.08%
+200	306aa, >SARS... at 96.08%
+201	306aa, >SARS... at 96.08%
+202	306aa, >SARS... at 96.08%
+203	306aa, >SARS... at 96.08%
+204	306aa, >Bulbul... at 96.08%
+205	306aa, >Bulbul... at 96.08%
+206	306aa, >Munia... at 96.08%
+207	306aa, >Thrush... at 96.08%
+208	306aa, >Bulbul... at 96.08%
+209	306aa, >Murine... at 96.08%
+210	306aa, >Murine... at 96.08%
+211	306aa, >Murine... at 96.08%
+212	306aa, >Murine... at 96.08%
+213	306aa, >Feline... at 96.08%
+214	306aa, >Feline... at 96.08%
+215	306aa, >Feline... at 96.08%
+216	306aa, >Feline... at 96.08%
+217	306aa, >Feline... at 96.08%
+218	306aa, >Feline... at 96.08%
+219	306aa, >Human... at 96.08%
+220	7073aa, >AGT21272.1... at 99.96%
+221	306aa, >SARS... at 96.08%
+222	4382aa, >AEA10981.1... at 99.79%
+223	4382aa, >AEA10771.1... at 99.82%
+224	306aa, >Infectious... at 96.08%
+225	306aa, >Infectious... at 96.08%
+226	306aa, >Miniopterus... at 96.08%
+227	7073aa, >AGT21317.1... at 99.97%
+228	306aa, >Feline... at 96.08%
+229	306aa, >Feline... at 96.08%
+230	306aa, >Bat... at 96.08%
+231	306aa, >Bat... at 96.08%
+232	306aa, >Bat... at 96.08%
+233	306aa, >Bat... at 96.08%
+234	306aa, >Bat... at 96.08%
+235	306aa, >Bat... at 96.08%
+236	306aa, >Bat... at 96.08%
+237	306aa, >Bat... at 96.08%
+238	306aa, >Bat... at 96.08%
+239	306aa, >Bat... at 96.08%
+240	306aa, >Mink... at 96.08%
+241	306aa, >Mink... at 96.08%
+242	306aa, >Feline... at 96.08%
+243	306aa, >Feline... at 96.08%
+244	306aa, >Feline... at 96.08%
+245	306aa, >Feline... at 96.08%
+246	306aa, >Feline... at 96.08%
+247	306aa, >Feline... at 96.08%
+248	306aa, >Bat... at 96.08%
+249	306aa, >Bat... at 96.08%
+250	306aa, >Bat... at 96.08%
+251	306aa, >Bat... at 96.08%
+252	306aa, >Feline... at 96.08%
+253	306aa, >Feline... at 96.08%
+254	306aa, >Feline... at 96.08%
+255	306aa, >Feline... at 96.08%
+256	306aa, >Feline... at 96.08%
+257	306aa, >Feline... at 96.08%
+258	306aa, >Night... at 96.08%
+259	306aa, >Sparrow... at 96.08%
+260	306aa, >White-eye... at 96.08%
+261	306aa, >Murine... at 96.08%
+262	306aa, >Alpaca... at 96.08%
+263	306aa, >Human... at 96.08%
+264	306aa, >Hipposideros... at 96.08%
+265	306aa, >Rousettus... at 96.08%
+266	306aa, >Bat... at 96.08%
+267	306aa, >Bat... at 96.08%
+268	306aa, >Munia... at 96.08%
+269	306aa, >Human... at 96.08%
+270	306aa, >Human... at 96.08%
+271	306aa, >Coronavirus... at 96.08%
+272	306aa, >Bat... at 96.08%
+273	306aa, >Bat... at 96.08%
+274	306aa, >Bat... at 96.08%
+275	306aa, >Bottlenose... at 96.08%
+276	306aa, >Deltacoronavirus... at 96.08%
+277	306aa, >Porcine... at 96.08%
+278	306aa, >Deltacoronavirus... at 96.08%
+279	306aa, >Deltacoronavirus... at 96.08%
+280	306aa, >Deltacoronavirus... at 96.08%
+281	306aa, >Deltacoronavirus... at 96.08%
+282	306aa, >Dromedary... at 96.08%
+283	306aa, >Rhinolophus... at 96.08%
+284	306aa, >BtVs-BetaCoV/SC2013... at 96.08%
+285	306aa, >BtMf-AlphaCoV/AH2011... at 96.08%
+286	306aa, >BtMf-AlphaCoV/FJ2012... at 96.08%
+287	306aa, >BtMf-AlphaCoV/GD2012... at 96.08%
+288	306aa, >BtMf-AlphaCoV/HeN2013... at 96.08%
+289	306aa, >BtMf-AlphaCoV/HuB2013... at 96.08%
+290	306aa, >BtMf-AlphaCoV/JX2012... at 96.08%
+291	306aa, >BtMr-AlphaCoV/SAX2011... at 96.08%
+292	306aa, >Alphacoronavirus... at 96.08%
+293	306aa, >BtNv-AlphaCoV/SC2013... at 96.08%
+294	306aa, >BtRf-AlphaCoV/HuB2013... at 96.08%
+295	306aa, >BtRf-AlphaCoV/YN2012... at 96.08%
+296	306aa, >BtPa-BetaCoV/GD2013... at 96.08%
+297	306aa, >BtRf-BetaCoV/HeB2013... at 96.08%
+298	306aa, >BtRf-BetaCoV/JL2012... at 96.08%
+299	306aa, >BtRf-BetaCoV/SX2013... at 96.08%
+300	306aa, >BtRs-BetaCoV/GX2013... at 96.08%
+301	306aa, >BtRs-BetaCoV/HuB2013... at 96.08%
+302	306aa, >BtRs-BetaCoV/YN2013... at 96.08%
+303	306aa, >BtTp-BetaCoV/GX2012... at 96.08%
+304	306aa, >Lucheng... at 96.08%
+305	306aa, >Bat... at 96.08%
+306	306aa, >Swine... at 96.08%
+307	306aa, >Porcine... at 96.08%
+308	306aa, >Camel... at 96.08%
+309	306aa, >Bat... at 96.08%
+310	306aa, >Bat... at 96.08%
+311	306aa, >229E-related... at 96.08%
+312	306aa, >SARS-like... at 96.08%
+313	306aa, >European... at 96.08%
+314	306aa, >Swine... at 96.08%
+315	306aa, >Rousettus... at 96.08%
+316	306aa, >Camel... at 96.08%
+317	306aa, >Alphacoronavirus... at 96.08%
+318	306aa, >Deltacoronavirus... at 96.08%
+319	306aa, >Mink... at 96.08%
+320	306aa, >NL63-related... at 96.08%
+321	306aa, >Betacoronavirus... at 96.08%
+322	306aa, >Coronavirus... at 96.08%
+323	306aa, >Porcine... at 96.08%
+324	306aa, >Hypsugo... at 96.08%
+325	306aa, >Porcine... at 96.08%
+326	306aa, >Swine... at 96.08%
+327	306aa, >Falcon... at 96.08%
+328	306aa, >Houbara... at 96.08%
+329	306aa, >Quail... at 96.08%
+330	306aa, >Pigeon... at 96.08%
+331	306aa, >Swine... at 96.08%
+332	306aa, >Water... at 96.08%
+333	306aa, >Alphacoronavirus... at 96.08%
+334	306aa, >Sparrow... at 96.08%
+335	306aa, >Quail... at 96.08%
+336	306aa, >Feline... at 96.08%
+337	306aa, >Alphacoronavirus... at 96.08%
+338	306aa, >Alphacoronavirus... at 96.08%
+339	306aa, >Alphacoronavirus... at 96.08%
+340	306aa, >Yak... at 96.08%
+341	306aa, >Rousettus... at 96.08%
+342	306aa, >Rhinolophus... at 96.08%
+343	306aa, >Tylonycteris... at 96.08%
+344	306aa, >Coronavirus... at 96.08%
+345	306aa, >Coronavirus... at 96.08%
+346	306aa, >Coronavirus... at 96.08%
+347	306aa, >Coronavirus... at 96.08%
+348	306aa, >Coronavirus... at 96.08%
+349	306aa, >Coronavirus... at 96.08%
+350	306aa, >Coronavirus... at 96.08%
+351	306aa, >Coronavirus... at 96.08%
+352	306aa, >Coronavirus... at 96.08%
+353	306aa, >Coronavirus... at 96.08%
+354	306aa, >Coronavirus... at 96.08%
+355	306aa, >Erinaceus... at 96.08%
+356	306aa, >Rousettus... at 96.08%
+357	306aa, >Miniopterus... at 96.08%
+358	306aa, >Miniopterus... at 96.08%
+359	306aa, >Tylonycteris... at 96.08%
+360	306aa, >Pipistrellus... at 96.08%
+361	306aa, >Scotophilus... at 96.08%
+362	306aa, >Rhinolophus... at 96.08%
+363	306aa, >Hipposideros... at 96.08%
+364	306aa, >Hipposideros... at 96.08%
+365	306aa, >pdb|9IZB|A... at 96.08%
+366	306aa, >Pangolin... at 96.08%
+367	306aa, >Bat... at 96.08%
+368	306aa, >Bottlenose... at 96.08%
+369	306aa, >Betacoronavirus... at 96.08%
+370	306aa, >Coronavirus... at 96.08%
+371	306aa, >Coronavirus... at 96.08%
+372	306aa, >Coronavirus... at 96.08%
+373	306aa, >Avian... at 96.08%
+374	306aa, >Raccoon... at 96.08%
+375	306aa, >Apodemus... at 96.08%
+376	306aa, >Minacovirus... at 96.08%
+377	306aa, >Bat... at 96.08%
+378	306aa, >Deltacoronavirus... at 96.08%
+379	306aa, >Deltacoronavirus... at 96.08%
+380	306aa, >Deltacoronavirus... at 96.08%
+381	306aa, >Deltacoronavirus... at 96.08%
+382	306aa, >Sarbecovirus... at 96.08%
+383	306aa, >Yunnan... at 96.08%
+384	306aa, >Sarbecovirus... at 96.08%
+385	306aa, >Bat... at 96.08%
+386	306aa, >Bat... at 96.08%
+387	306aa, >Anser... at 96.08%
+388	306aa, >Equine... at 96.08%
+389	306aa, >plateatu... at 96.08%
+390	306aa, >Betacoronavirus... at 96.08%
+391	306aa, >Betacoronavirus... at 96.08%
+392	306aa, >Betacoronavirus... at 96.08%
+393	306aa, >Betacoronavirus... at 96.08%
+394	306aa, >Betacoronavirus... at 96.08%
+395	306aa, >Betacoronavirus... at 96.08%
+396	306aa, >Betacoronavirus... at 96.08%
+397	306aa, >Tapir... at 96.08%
+398	306aa, >Jingmen... at 96.08%
+399	306aa, >Jingmen... at 96.08%
+400	306aa, >Jingmen... at 96.08%
+401	306aa, >Jingmen... at 96.08%
+402	306aa, >Longquan... at 96.08%
+403	306aa, >Wenzhou... at 96.08%
+404	306aa, >Jingmen... at 96.08%
+405	306aa, >Wenzhou... at 96.08%
+406	306aa, >pdb|9F2V|B... at 96.08%
+407	306aa, >Cynopterus... at 96.08%
+408	306aa, >Hipposideros... at 96.08%
+409	306aa, >Macroglossus... at 96.08%
+410	306aa, >Megaderma... at 96.08%
+411	306aa, >Mouse... at 96.08%
+412	306aa, >Myotis... at 96.08%
+413	306aa, >Scotophilus... at 96.08%
+414	306aa, >Triaenops... at 96.08%
+415	306aa, >Pteropus... at 96.08%
+416	306aa, >Rousettus... at 96.08%
+417	306aa, >Eptesicus... at 96.08%
+418	306aa, >Jingmen... at 96.08%
+419	306aa, >Pangolin... at 96.08%
+420	306aa, >Porcine... at 96.08%
+421	306aa, >Porcine... at 96.08%
+422	306aa, >Porcine... at 96.08%
+423	306aa, >Bat... at 96.08%
+424	306aa, >Tadarida... at 96.08%
+425	306aa, >Tadarida... at 96.08%
+426	306aa, >alphacoronavirus... at 96.08%
+427	306aa, >alphacoronavirus... at 96.08%
+428	306aa, >alphacoronavirus... at 96.08%
+429	306aa, >bat... at 96.08%
+>Cluster 2
+0	6857aa, >WBU87225.1... *
+>Cluster 3
+0	45aa, >XBR16787.1... at 88.89%
+1	6825aa, >UED13286.1... *
+>Cluster 4
+0	6673aa, >UHL62014.1... *
+>Cluster 5
+0	4547aa, >YP_009915659.1... *
+>Cluster 6
+0	4481aa, >sp|P0C6T5.1|R1A_BCHK5... *
+>Cluster 7
+0	4454aa, >YP_009513009.1... *
+1	4454aa, >YP_009513009.1... at 100.00%
+>Cluster 8
+0	4441aa, >sp|P0C6F7.1|R1A_BC133... *
+1	4434aa, >sp|P0C6T4.1|R1A_BCHK4... at 97.79%
+>Cluster 9
+0	4430aa, >YP_009944267.1... *
+>Cluster 10
+0	4421aa, >sp|P0C6U5.1|R1A_CVHN5... *
+>Cluster 11
+0	4418aa, >YP_009944265.1... *
+>Cluster 12
+0	4391aa, >sp|K9N638.1|R1A_MERS1... *
+1	299aa, >pdb|8J34|B... at 100.00%
+>Cluster 13
+0	4383aa, >sp|P0C6U7.1|R1A_CVHOC... *
+>Cluster 14
+0	4382aa, >XBS50337.1... *
+>Cluster 15
+0	4373aa, >YP_010229071.1... *
+>Cluster 16
+0	4248aa, >sp|P0C6T6.1|R1A_BCHK9... *
+>Cluster 17
+0	4231aa, >YP_001718611.1... *
+>Cluster 18
+0	4189aa, >ACU31042.1... *
+>Cluster 19
+0	303aa, >YP_008439216.1... at 99.67%
+1	303aa, >YP_008439216.1... at 99.67%
+2	4160aa, >ASL24650.1... *
+>Cluster 20
+0	4128aa, >sp|P0C6F6.1|R1A_BC512... *
+>Cluster 21
+0	4090aa, >YP_009194638.1... *
+>Cluster 22
+0	4059aa, >YP_001552235.1... *
+1	302aa, >pdb|8ZAI|B... at 99.01%
+>Cluster 23
+0	4017aa, >sp|P0C6V2.1|R1A_CVPPU... *
+>Cluster 24
+0	3981aa, >YP_009825007.1... *
+1	3981aa, >AKF17723.1... at 100.00%
+>Cluster 25
+0	3958aa, >YP_009256196.1... *
+>Cluster 26
+0	3953aa, >sp|P0C6V5.1|R1A_IBVM... *
+1	3951aa, >QZZ70128.1... at 90.33%
+>Cluster 27
+0	3879aa, >ASR18936.1... *
+1	3879aa, >ASR18944.1... at 96.39%
+>Cluster 28
+0	3614aa, >YP_010229072.1... *
+>Cluster 29
+0	3569aa, >YP_010229073.1... *
+>Cluster 30
+0	3529aa, >YP_010229074.1... *
+>Cluster 31
+0	422aa, >sp|P59595.1|NCAP_SARS... *
+>Cluster 32
+0	308aa, >pdb|7WKU|F... *
+1	308aa, >pdb|7WKU|F... at 100.00%
+2	308aa, >pdb|7WKU|F... at 100.00%
+>Cluster 33
+0	307aa, >YP_009755914.1... *
+>Cluster 34
+0	303aa, >pdb|8E7N|B... *
+>Cluster 35
+0	299aa, >pdb|8ZCC|B... *
