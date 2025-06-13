@@ -1,0 +1,195 @@
+\documentclass{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+
+\geometry{a4paper, top=2.54cm, bottom=2.54cm, left=3.18cm, right=3.18cm}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5\baselineskip}
+
+\title{Western Blot实验报告}
+\author{刘思昀 2022522011}
+\date{2025年3月20日}
+
+\begin{document}
+\maketitle
+
+\section{实验目的}
+学习用免疫印迹的方法检测基因在蛋白水平的表达.
+
+\section{实验原理}
+
+蛋白质免疫印迹可应用于:
+\begin{enumerate}
+    \item 从蛋白质混合物中检出目标蛋白质
+    \item 定量或定性确定细胞或组织中蛋白质的表达情况
+    \item 用于蛋白质-蛋白质、蛋白质-DNA、蛋白质-RNA相互作用后续分析
+\end{enumerate}
+
+Western 免疫印迹, 是将蛋白质转移到膜上, 然后利用抗体进行检测的方法. 对已知表达蛋白, 可用相应抗体作为一抗进行检测, 对新基因的表达产物, 可通过融合部分的抗体检测.
+
+与Southern或Northern杂交方法类似, 但Western Blot采用的是聚丙烯酰胺凝胶电泳, 被检测物是蛋白质, 探针是抗体, 显色用标记的二抗.
+
+经过PAGE分离的蛋白质样品, 转移到固相载体 (例如硝酸纤维素薄膜) 上, 固相载体以非共价键形式吸附蛋白质, 且能保持电泳分离的多肽类型及其生物学活性不变. 以固相载体上的蛋白质或多肽作为抗原, 与对应的抗体起免疫反应, 再与酶或同位素标记的第二抗体起反应, 经过底物显色或放射自显影以检测电泳分离的特异性目的基因表达的蛋白成分. 该技术也广泛应用于检测蛋白水平的表达.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{principle.png}
+    \caption{Western Blot的实验原理和基本流程}
+\end{figure}
+
+\newpage
+
+\section{实验材料与仪器}
+
+\subsection{材料}
+
+细胞转染后裂解液
+
+\subsection{试剂}
+
+\begin{itemize}
+    \item MOPS: running buffer $1\ \mbox{L}$
+    \item 三色预染Marker ($10-180$ kDa)
+    \item Loading buffer
+    \item GeneScript $4\%-12\%$ ExpressPlus蛋白预制胶
+    \item Transfer buffer: 1包Transfer buffer, 加入$900\ \mbox{ml}\ \mbox{dd}\ce{H2O}$和$100\ \mbox{ml}\ \ce{CH3OH}$配置成$1\ \mbox{L}$溶液.
+    \item 甲醇
+    \item ECL kit
+    \item 一抗: Anti-GAPDH rabbit polyclonal antibody (D110016-0200); Anti-GFP rabbit polyclonal antibody (D110008-0200)
+    \item 二抗: HRP-conjugated Goat Anti-Rabbit lgG
+    \item 脱脂奶粉
+    \item TBST
+\end{itemize}
+
+\subsection{仪器}
+
+电泳槽, PVDF膜, 湿电转膜仪, WB转膜夹, 摇床, 化学发光仪
+
+\section{实验步骤}
+
+\subsection{蛋白电泳}
+
+\begin{enumerate}
+    \item 撕下预制胶底部绝缘胶条, 将预制胶正确安装至电泳槽中, 将电泳缓冲液 (running buffer) 加入内外电泳槽中至完全没过胶体, 小心拔出梳子, 不要将加样孔撕裂.
+    \item 用微量移液器将$20\ \mu l$所制备蛋白样品全部加入样品孔中. 加样时速度要慢, 避免带入气泡, 气泡易使样品混入到相邻的加样孔中. 包括两个阴性对照样本 (GAPDH) 和两个阳性样本 (PD1-GFP).
+    \item 在其余所有无样品孔中加入等量的样品缓冲液loading buffer ($5\ \mu l$/孔).
+    \item 选择合适的无样品孔, 加$10-180$ kDa的Marker, $3-5\ \mu l$.
+    \item 盖上电源盖, 将电极插头与适当的电极相接 (红对红, 切勿插反). 开启电源, 电泳条件为$140\ \mbox{V}, 45-60\ \mbox{min}$.
+    \item 待染料前沿迁移至凝胶的底部 (约需$40\ \mbox{min}-50\ \mbox{min}$), 关闭电源, 取出凝    胶玻璃板, 将剥胶铲插入两块玻璃板的一角.小心撬开玻璃板, 取下凝胶.
+\end{enumerate}
+
+\subsection{膜转移}
+
+\begin{enumerate}
+    \item 本实验中选用PVDF膜.
+    \item 切胶：将玻璃板撬掉剥胶, 撬的时候动作要轻；撬一会儿玻璃板便开始松动, 直到撬去玻板 (撬时一定要小心, 胶很易裂). 除去小玻璃板后, 将浓缩胶及loading buffer下端部分轻轻刮去, 要避免把分离胶刮破. 
+    \item 备膜: 将PVDF膜置于甲醇中平衡至膜变透明, 将平衡好的PVDF膜在电转缓冲液中浸润备 用.此步骤一定要戴手套, 因为手上的蛋白会污染膜, 影响后续实验.
+    \item 三明治结构安装：将转膜用的夹子打开使黑的一面 (负极) 保持水平. 按着海绵---滤纸---凝胶---印迹膜---滤纸---海绵的顺序依次叠放, 最后将白色板夹子 (正极) 盖好夹紧. 整个操作在转移液中进行, 注意每一层都不能有
+    气泡 (如有气泡可用剥胶板轻轻赶压).
+    \item 转膜: 将安装好的三明治结构装入转移槽中 (黑对黑, 白对红), 转移槽中加入$1\ \mbox{L}$左右转移缓冲液 (Transfer buffer) 盖好电源盖 (黑对黑, 红对红) 接通电源, $100\ \mbox{V}$转膜$1\ \mbox{h}$. (膜两边的滤纸不能相互接触, 接触后会发生短路)
+    \item 电转移时会产热, 转膜槽要置于冰盒中来降温. 转膜时间可以根据蛋白分子量的大小以及胶厚度的不同进行调整 (大分子胶厚时间长, 小分子胶薄时间短).
+\end{enumerate}
+
+\subsection{封闭}
+
+在转移结束前配好$20\ \mbox{ml}$ $5\%$ TBST-non-fat milk (本次实验提供市售溶液). 转移结束后将膜放入封闭液中, 室温摇床缓慢摇动, 孵育$1\ \mbox{h}$.
+
+\subsection{一抗孵育}
+
+\begin{enumerate}
+    \item 先将需要检测的抗体准备好 (anti-GFP, anti-GAPDH).
+    \item 按照1:2000的比例用$5\%$ TBST non-fat-milk稀释抗体.
+    \item 将稀释好的抗体和膜放入容器中 (抗体孵育盒) 或杂交袋中一起孵育. 一般采用RT $2-4\ \mbox{h}$或$4^\circ C$ overnight, 可根据抗体量和膜上抗原量适当延长或缩短.
+    时间.
+    \item  洗涤: 抗体孵育结束后, 将抗体回收, 把膜取出放入加有TBST洗涤液的洗膜盒中, 在水平摇床上充分摇动进行洗涤, $10\ \mbox{min} \times 3$. 
+\end{enumerate}
+
+\subsection{二抗孵育}
+
+室温下孵育$1\ \mbox{h}$. 本实验采用HRP标记的二抗, 稀释比例为1:5000.
+
+随后用TBST洗涤, $10\ \mbox{min} \times 3$. 
+
+\subsection{显色}
+
+配制ECL反应液: $A:B=1:1$, 每人配制$500\ \mu l$ (A+B).
+
+将膜从TBST中夹出,
+放入化学发光仪的置物板上(注意膜的正反面), 将ECL工作液逐滴加在膜上 (一张$8\ \mbox{cm} \times 6\ \mbox{cm\}}$的膜大约需要$1\ \mbox{ml}$反应液), 反应$10\ \mbox{s}$ (不同抗体反应时间不同, 一般需要预实验进行条件摸索), 随后将置物板放回仪器中, 拍照, 存储数据. 
+
+\subsection{Western Blot结果处理}
+
+\begin{enumerate}
+	\item 使用ImageJ 1.54f, 将图片转换成灰度图片，并消除背景影响.
+	\item 设置定量参数: Area, Mean gray  value, MinMax gray value, integrated density.
+	\item 将图片反色, 把Western Blot转化成明亮条带, 并计算条带的灰度统计值.
+	\item 将目标蛋白GFP的灰度值除以内参蛋白GADPH的灰度值, 进行归一化处理.
+	\item 将一块胶上的阳性实验组和内参对照组各4条的条带归一化后的灰度值取平均值.
+\end{enumerate}
+
+%\newgeometry{a4paper, top=2.54cm, bottom=2.54cm, left=1.27cm, right=1.27cm}
+
+\section{实验结果与分析}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[c]{0.77\textwidth}
+        \includegraphics[width=\textwidth]{gapdh.jpg}
+        \caption{内参对照GAPDH Western Blot结果}
+        \label{fig:sub1}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.22\textwidth}
+        \includegraphics[width=\textwidth]{marker.jpg}
+        \caption{蛋白Marker}
+        \label{fig:sub2}
+    \end{subfigure}
+    \caption{内参对照GAPDH实验结果}
+    \label{fig:group1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[c]{0.77\textwidth}
+		\includegraphics[width=\textwidth]{gfp.jpg}
+		\caption{阳性对照GFP Western Blot结果}
+		\label{fig:sub3}
+	\end{subfigure}
+	\begin{subfigure}[c]{0.22\textwidth}
+		\includegraphics[width=\textwidth]{marker.jpg}
+		\caption{蛋白Marker}
+		\label{fig:sub4}
+	\end{subfigure}
+	\caption{阳性对照GFP实验结果}
+	\label{fig:group2}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\begin{subfigure}[b]{0.65\textwidth}
+		\includegraphics[width=\textwidth]{western_blot.png}
+		\caption{Western Blot结果, NC=Negative Control}
+		\label{fig:sub5}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.34\textwidth}
+		\includegraphics[width=\textwidth]{wb_result_update.jpg}
+		\caption{灰度值结果}
+		\label{fig:sub6}
+	\end{subfigure}
+	\caption{Western Blot实验结果}
+	\label{fig:group3}
+\end{figure}
+
+\restoregeometry
+
+
+\section{讨论}
+
+
+
+\end{document}

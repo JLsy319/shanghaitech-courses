@@ -1,0 +1,460 @@
+\documentclass{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}
+
+\usepackage[version=4]{mhchem}
+
+\geometry{a4paper, top=2.54cm, bottom=2.54cm, left=3.18cm, right=3.18cm}
+\setlength{\parindent}{0em}
+\usepackage{setspace}
+\setlength{\parskip}{0.5\baselineskip}
+
+\title{分子克隆实验报告}
+\author{刘思昀 2022522011}
+\date{2025年3月30日}
+
+\begin{document}
+\maketitle
+
+\section{PD-1介绍}
+
+PD-1, Programmed Cell Death Protein 1, 是一种免疫检查点跨膜蛋白, 由PDCD1基因编码, 主要在活化的T细胞, B细胞和髓系细胞中表达. 其通过与配体PD-L1/PD-L2结合, 传递抑制性信号以调控免疫应答强度, 防止过度免疫反应导致的组织损伤. 在肿瘤微环境中, 癌细胞常高表达PD-L1, 通过激活PD-1通路抑制T细胞功能, 从而实现免疫逃逸, 而靶向PD-1/PD-L1通路的抑制剂已成为癌症免疫治疗的重要策略.
+
+\section{实验目的}
+
+通过无缝克隆技术构建PD1-EGFP融合蛋白质粒.
+
+\section{实验原理}
+
+Gibson Assembly通过单管反应整合三种酶活性实现DNA片段的无缝连接: 5'核酸外切酶,DNA聚合酶的3, 延伸活性以及DNA连接酶活性. 首先, 5'核酸外切酶消化DNA片段的5'末端序列, 暴露出互补单链区域以促进退火; 随后, DNA聚合酶利用3'延伸活性填补退火区域缺口; 最终, DNA连接酶封闭切口, 共价连接DNA片段.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Gibson.jpg}
+    \caption{Gibson Assembly原理示意图 (来源: New England Biolabs)}
+    \label{fig:gibson_assembly}
+\end{figure}
+
+\newpage
+
+\section{实验材料与仪器}
+
+\subsection{试剂}
+
+\begin{itemize}
+    \item pEGFP-N1质粒载体 (教师准备, 见图\ref{fig:pEGFP})
+    \item PD1片段 (教师准备, 见图\ref{fig:pd1})
+    \item Sangon Biotech LB Broth Agar A507003-0250
+    \item Sangon Biotech LB Broth A507002-0250
+    \item Weidi 硫酸卡那霉素溶液 $100\ \mbox{mg/ml}$ (过滤除菌) WD0473238
+    \item Vazyme 2x Rapid Taq Master Mix P222-03-AA
+    \item baygene Regular Agarose BY-R0100
+    \item Vazyme 1x Tris-Acetate-EDTA Running buffer (TAE) G102
+    \item Vazyme Ultra Red GR501-01-AA
+    \item Vazyme DL5000 DNA Marker MD102-01-AA
+    \item OMEGA biotech DL2000 DNA Marker M10-01
+    \item Vazyme Fast Pure Gel Red Extraction Mini Kit DC301-01
+    \item Vazyme ClonExpress II One Step Cloning Kit C112-01
+    \item Vazyme DH5$\alpha$ Competent Cell C502-02
+    \item Vazyme FastPure Plasmid Mini Kit DC201-01
+\end{itemize}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.8\textwidth}
+      \includegraphics[width=\linewidth]{pEGFP.png}
+      \caption{pEGFP-N1}
+      \label{fig:pEGFP}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[b]{1.0\textwidth}
+      \includegraphics[width=\linewidth]{pd1.png}
+      \caption{PD-1}
+      \label{fig:pd1}
+    \end{subfigure}
+    \caption{质粒图谱}
+    \label{fig:plasmid}
+\end{figure}
+
+\subsection{仪器}
+
+\begin{itemize}
+    \item Thermo Fisher Scientific ProFlex PCR System
+    \item Bio-rad 电泳槽
+    \item eppendorf Centrifuge 5424R
+    \item Thermo Fisher Scientific Nanodrop One
+    \item Azure Biosystems C150
+    \item 摇床
+    \item 恒温培养箱
+\end{itemize}
+
+\section{实验步骤}
+
+\subsection{培养基配置}
+
+\begin{enumerate}
+    \item 固体LB培养基配置: 称量$20.0\ \mbox{g}$ LB Broth Agar, 加入$500\ \mbox{ml}$ dd$\ce{H2O}$.
+    \item 液体LB培养基配置: 称量$5.0\ \mbox{g}$ LB Broth, 加入$200\ \mbox{ml}$ dd$\ce{H2O}$.
+    \item 确保培养基盖子略微松口, 贴上灭菌胶带, 送至L楼一楼灭菌室灭菌.
+    \item 灭菌后冷却, 加入Kanamycin, 目标浓度均为$100\ \mu \mbox{g/ml}$.
+    \item 将固体培养基倒入平板中冷却, 凝固后倒置放入冰$4^\circ C$保存.
+\end{enumerate}
+
+\subsection{引物设计}
+
+使用SnapGene 8.0.2中Gibson Assembly功能设计引物插入片段, vector部分选中pEGFP-N1中的整个MCS, frament选中整个PD-1序列, 引物选择Target $T_m = 60^\circ C$, 15-25 overlapping bases.
+
+根据SnapGene设计的引物进行微调, 使得上下游引物的$T_m$值尽可能接近, 设计引物如下:
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        Primer & Sequence & $T_m\ 1$ & $T_m\ 2$ & GC\% \\
+        \midrule
+        Fragment.forward & GTGAACCGTCAGATCCatgcagatcccacaggcg  & 60  & 70  & 59  \\
+        Fragment.reverse & ATGGTGGCGcaggggccaagagcagtg  & 58  & 72  & 67  \\
+        Vector.forward & cccctgCGCCACCATGGTGAGCAA  & 58  & 68  & 67  \\
+        Vector.reverse & gggatctgcatGGATCTGACGGTTCACTAAACCAG  & 60  & 68  & 51  \\
+        \bottomrule
+    \end{tabular}
+    \caption{引物设计}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{assembled.png}
+    \caption{质粒设计}
+    \label{fig:plasmid}
+\end{figure}
+
+\subsection{Gibson Assembly}
+
+\subsubsection{PCR体系}
+
+冰上操作, 配置$50\ \mu l$反应体系:
+
+\begin{itemize}
+    \item 2x Rapid Taq Master Mix: $25\ \mu l$
+    \item Forward primer: $2\ \mu l$
+    \item Reverse primer: $2\ \mu l$
+    \item Template: $1\ \mu l$
+    \item dd$\ce{H2O}$: $20\ \mu l$
+\end{itemize}
+
+短暂离心混匀
+
+\subsubsection{PCR程序}
+
+Stage 1 (1x):
+\begin{itemize}
+    \item $95^\circ C$, $30\ s$
+\end{itemize}
+
+Stage 2 (3x):
+\begin{itemize}
+    \item $95^\circ C$, $15\ \mbox{s}$
+    \item $(T_m\ 1 - 5)^\circ C$, $30\ \mbox{s}$
+    \item $72^\circ C$, check table \ref{tab:pcr_time} below
+\end{itemize}
+
+Stage 3 (32x):
+\begin{itemize}
+    \item $95^\circ C$, $15\ \mbox{s}$
+    \item $(T_m\ 2 - 5)^\circ C$, $30\ \mbox{s}$
+    \item $72^\circ C$, check table\ref{tab:pcr_time} below
+\end{itemize}
+
+Stage 4 (1x):
+\begin{itemize}
+    \item $72^\circ C$, $5\ \mbox{min}$
+    \item $10^\circ C$, hold
+\end{itemize}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{cccc}
+        \toprule
+          & $T_m\ 1$ & $T_m\ 2$ & Extending Duration (s) \\
+        \midrule
+        Fragment & 59 & 70 & 15 \\
+        Vector & 58 & 67 & 75 \\
+        \bottomrule
+    \end{tabular}
+    \caption{PCR扩增时间与退火温度}
+    \label{tab:pcr_time}
+\end{table} 
+
+\subsection{琼脂糖凝胶电泳}
+
+\subsubsection{1\%琼脂糖凝胶制备}
+
+\begin{enumerate}
+    \item 1x TAE缓冲液配置: 1包粉末中加入$1\ \mbox{L}\ dd\ce{H2O}$.
+    \item 称量$0.3\ \mbox{g}$琼脂糖粉末, 加入$30\ \mbox{ml}$ 1x TAE缓冲液.
+    \item 微波炉中加热, 沸腾三次后取出.
+    \item 在流水中冷却至不烫手, 加入$3\ \mu l$ GelRed染料, 摇晃混匀.
+    \item 倒入制胶模具, 静置约$30\ \mbox{min}$使其凝固, 平稳竖直拔出梳子, 将凝胶放入电泳槽中, 确保电泳槽中TAE完全浸没凝胶.
+\end{enumerate}
+
+\subsubsection{电泳}
+
+将PCR反应后的全部产物加入孔中, 使用DL5000 DNA Marker.
+
+电泳条件: $140\ \mbox{V}, 30\ \mbox{min}$.
+
+电泳结束后, 使用照胶仪在UV365, exposure $10\ \mbox{s}$的条件拍照, 并使用auto adjust调整图片.
+
+\subsection{胶回收}
+
+将凝胶放在紫外灯下照射, 切下所需要的目的条带, 将切下的凝胶放入1.5\ ml离心管中.
+
+使用胶回试剂盒进行回收, 按照说明书操作.
+\begin{enumerate}
+    \item 称量凝胶质量, $100\ \mbox{mg}$凝胶等同于$100\ \mu l$体积. 加入等体积的Buffer GDP, 放置在$55^\circ C$金属浴中加热至凝胶完全溶解, 期间颠倒混匀两次.
+    \item 短暂离心收集管壁上的液体, 将吸附柱置于收集管中, 把$\leq 700\ \mu l$溶液转移至吸附柱中 (若溶液体积大于$700\ \mu l$, 分两次转移), $12000\ \mbox{rpm}$离心$1\ \mbox{min}$.
+    \item 弃去收集管中液体, 在吸附柱中加入$300\ \mu l$ Buffer GDP, 静置$1\ \mbox{min}$, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$.
+    \item 弃去收集管中液体, 在沿管壁四周在吸附柱中加入$700\ \mu l$ Buffer GW, 颠倒混匀2-3次, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$. 再重复一次该步骤.
+    \item 弃去收集管中液体, 空离, $12000\ \mbox{rpm}$离心$2\ \mbox{min}$.
+    \item 将吸附柱置于新的$1.5\ \mbox{ml}$离心管中, 向吸附柱中央加入$20\ \mu l$预热至$55^\circ C$的$dd\ce{H2O}$, 静置$2\ \mbox{min}$, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$.
+\end{enumerate}
+
+用Nanodrop测定胶回收浓度.
+
+\subsection{重组}
+
+\subsubsection{重组体系}
+冰上操作, 配置$20\ \mu l$反应体系:
+
+\begin{itemize}
+    \item 5x CE II Buffer: $5\ \mu l$
+    \item Vector: $X = \mbox{max} \{\frac{0.02 \times \mbox{number of its base pair}}{\mbox{concentration}}, 1 \} \mu l$
+    \item Fragment: $Y = \mbox{max} \{\frac{0.04 \times \mbox{number of its base pair}}{\mbox{concentration}}, 1 \} \mu l$
+    \item Exnase II: $2\ \mu l$
+    \item dd$\ce{H2O}$: $(14 - X - Y)\ \mu l$
+\end{itemize}
+
+\subsubsection{重组程序}
+
+\begin{itemize}
+    \item $37^\circ C$, $30\ \mbox{min}$
+    \item $10^\circ C$, hold
+\end{itemize}
+
+\subsection{转化}
+
+\begin{enumerate}
+    \item 将DH5$\alpha$感受态细胞放在冰上解冻.
+    \item 加入$10\ \mu l$重组产物, 轻弹混匀, 冰上孵育$30\ \mbox{min}$.
+    \item $42^\circ C$金属浴热激$30\ \mbox{s}$, 立即放回冰上静置$3\ \mbox{min}$(此步骤需严格计时).
+    \item 在超净台中操作, 加入$900\ \mu l$LB培养基; 然后放入窑床中$37^\circ C$培养$45\ \mbox{min}$.
+    \item $4000\ \mbox{rpn}$离心$4\ \mbox{min}$, 弃去$800\ \mu l$上清液, 吹打混匀.
+    \item 涂平板 (Kan\textsuperscript{+}), 每个平板$75\ \mu l$菌液, 在$37^\circ C$恒温培养箱中倒置培养$12-16\ \mbox{h}$.
+\end{enumerate}
+
+\subsection{Colony PCR}
+
+\subsubsection{PCR体系}
+
+冰上操作, 配置$50\ \mu l$反应体系:
+
+\begin{itemize}
+    \item 2x Rapid Taq Master Mix: $25\ \mu l$
+    \item Forward primer (通用引物CMV-F): $2\ \mu l$
+    \item Reverse primer (通用引物EGFP-N): $2\ \mu l$
+    \item Template: $1\ \mu l$
+    \item dd$\ce{H2O}$: $20\ \mu l$
+\end{itemize} 
+
+短暂离心混匀.
+
+在过夜培养的平板上, 用$10\ \mu l$枪头挑取单克隆菌株, 在pcr管中蘸取几次.
+
+将挑菌的枪头直接打入装有$5\ \mbox{ml}$ Kan\textsuperscript{+} LB液体培养基的摇菌管中, 放入$37^\circ C$摇床中培养$8-10\ \mbox{h}$ (至菌液浑浊).
+
+\subsubsection{PCR程序}
+
+Stage 1 (1x):
+\begin{itemize}
+    \item $95^\circ C$, $30\ s$
+\end{itemize}
+
+Stage 2 (35x):
+\begin{itemize}
+    \item $95^\circ C$, $15\ \mbox{s}$
+    \item $60^\circ C$, $30\ \mbox{s}$
+    \item $72^\circ C$, $20\ \mbox{s}$
+\end{itemize}
+
+Stage 3 (1x):
+\begin{itemize}
+    \item $72^\circ C$, $5\ \mbox{min}$
+    \item $10^\circ C$, hold
+\end{itemize}
+
+\subsubsection{电泳}
+
+使用1\%琼脂糖凝胶, 将PCR反应后的全部产物加入孔中, 使用DL2000 DNA Marker.
+
+电泳条件: $140\ \mbox{V}, 30\ \mbox{min}$.
+
+电泳结束后, 使用照胶仪在UV365, exposure $10\ \mbox{s}$的条件拍照, 并使用auto adjust调整图片.
+
+\subsection{质粒提取}
+
+使用胶回试剂盒提取质粒, 按照说明书操作.
+
+\begin{enumerate}
+    \item 取已经浑浊的菌液$4\ \mbox{ml}$, 分两次加入$2\ \mbox{ml}$的离心管中, 每次均$10000\ \mbox{rpm}$离心$1\ \mbox{min}$, 弃去上清液.
+    \item 加入$250\ \mu l$ Buffer P1, 彻底重悬, 使溶液中看不到细菌团块.
+    \item 加入$250\ \mu l$ Buffer P2, 温和地上下颠倒混匀$8-10$次.
+    \item 加入$350\ \mu l$ Buffer P3, 立即温和地上下颠倒混匀$8-10$次. 此时会出现白色絮状沉淀, $12000\ \mbox{rpm}$离心$10\ \mbox{min}$.
+    \item 将吸附柱置于收集管中, 将上清液转移至吸附柱中, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$.
+    \item 弃去收集管中液体, 在吸附柱中加入$600\ \mu l$ Buffer PW2, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$. 再重复一次该步骤.
+    \item 弃去收集管中液体, 空离, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$.
+    \item 将吸附柱置于新的$1.5\ \mbox{ml}$离心管中, 向吸附柱中央加入$70\ \mu l$预热至$55^\circ C$的$dd\ce{H2O}$, 静置$2\ \mbox{min}$, $12000\ \mbox{rpm}$离心$1\ \mbox{min}$.
+    \item 用Nanodrop测定质粒浓度, 并检查A260/A280比值和A260/A230比值.
+\end{enumerate}
+
+\subsection{测序}
+
+吸取$20\ \mu l$质粒加入新的pcr管, 送去测序, 使用CMV-F和pEGFP-N-3两个通用引物.
+
+\section{实验结果与分析}
+
+\subsection{线性化载体片段跑胶}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+      \includegraphics[width=\linewidth]{gel_vec_a.jpg}
+      \caption{fragemnt线性化电泳结果}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+      \includegraphics[width=\linewidth]{dl5000.jpg}
+      \caption{DL5000 DNA Marker}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[b]{0.5\textwidth}
+      \includegraphics[width=\linewidth]{gel_frag_a.jpg}
+      \caption{vector线性化电泳结果}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+      \includegraphics[width=\linewidth]{dl2000.jpg}
+      \caption{DL2000 DNA Marker}
+    \end{subfigure}
+    \caption{线性化载体片段电泳结果}
+    \label{fig:gel1}
+\end{figure}
+
+线性化载体目标大小为$4652\ \mbox{bp}$, 线性化片段目标大小为$864\ \mbox{bp}$.
+
+根据DNA Marker, 红色框内片段即为需要纯化的条带. (见图\ref{fig:gel1})
+
+\subsection{胶回收}
+
+回收后, 通过Nanodrop测定浓度, 结果如下:
+
+\begin{itemize}
+    \item Fragment 1: $56.5\ \mbox{ng}/\mu l$
+    \item Fragment 2: $71.3\ \mbox{ng}/\mu l$
+    \item Vector 1: $173.9\ \mbox{ng}/\mu l$
+    \item Vector 2: $137.8\ \mbox{ng}/\mu l$
+\end{itemize}
+
+因此重组体系中, 重组体系中载体和片段的使用量均为$1\ \mu l$.
+
+\subsection{转化涂板}
+
+培养12h后, 观察平板 (见图\ref{fig:plate}), 结果如下:
+
+生长时间合适, 容易找到单克隆菌株.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+      \includegraphics[width=\linewidth]{plate1.png}
+      \caption{平板1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.49\textwidth}
+      \includegraphics[width=\linewidth]{plate2.png}
+      \caption{平板2}
+    \end{subfigure}
+    \caption{转化涂板结果}
+    \label{fig:plate}
+\end{figure}
+
+\subsection{Colony PCR}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.65\textwidth}
+      \includegraphics[width=\linewidth]{colony.png}
+      \caption{电泳结果}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\linewidth]{dl2000.jpg}
+        \caption{DL2000 DNA Marker}
+    \end{subfigure}
+    \caption{Colony PCR电泳结果}
+    \label{fig:gel2}
+\end{figure}
+
+若载体包含目标片段PD1, 则预期长度为$1010\ \mbox{bp}$; 若载体不包含目标片段PD1, 则预期长度为$227\ \mbox{bp}$.
+
+红框内亮度最高, 根据DNA Marker可以判断, 长度约为$1000\ \mbox{bp}$, 可以基本验证PD1片段已经成功插入. (见图\ref{fig:gel2})
+
+\newpage
+
+\subsection{质粒提取}
+
+\begin{table}
+    \centering
+    \begin{tabular}{cccc}
+        \toprule
+        Sample & Concentration & A260/A280 & A260/A230 \\
+        \midrule
+        Sample1-2 & $55.0\ \mbox{ng}/\mu l$ & 2.10 & 2.22 \\
+        Sample2-1 & $55.9\ \mbox{ng}/\mu l$ & 1.92 & 1.68 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Nanodrop质粒测定结果}
+    \label{tab:extraction}
+\end{table}
+
+菌液Sample1-2, Sample2-1提取质粒, 浓度表\ref{tab:extraction}.
+
+\subsection{测序}
+
+将提取的质粒送测, 测序结果如图\ref{fig:sequencing}. 检查测序结果, 通过双向测序, 可以验证PD-1片段是否正确插入到pEGFP-N1载体中.
+
+在Sample1-2的测序结果中, 序列与目标序列完全一致; 在Sample2-1中, Sanger测序置信度较高的长度区间, 序列与目标序列完全一致. 这表明PD-1片段已经成功插入到pEGFP-N1载体中, 并且没有发生突变或缺失.
+
+具体的序列比对结果附在实验报告最后.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{Assembled-seq.png}
+    \caption{Sample1-2和Sample2-1测序结果: Alignment Overview}
+    \label{fig:sequencing}
+\end{figure}
+
+\section{讨论}
+
+\begin{enumerate}
+    \item 设计引物时, 尽可能确保上下游引物$T_m$值接近, 其次考虑$\mbox{GC}\%$, 以提高扩增效率.
+    \item 上样前, 注意PCR中使用的酶是否含有染料. 有染料可以直接上样, 没有染料需要加入loading buffer.
+    \item 电泳时, 注意电泳时间, 确保ladder能够完全抛开, 同时样品前沿没有跑出胶外.
+    \item 平板过夜培养要避免时间过长, 否则会出现菌落过于密集, 难以挑取单克隆.
+    \item 送测前要先进行鉴定, 确保片段已经正确插入, 可以使用酶切法或者进行Colony PCR.
+\end{enumerate}
+
+\end{document}
